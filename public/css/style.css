@@ -1,0 +1,100 @@
+body {
+    margin-top: 105px;
+    }
+   
+    .navbar{
+   box-shadow: 2px 3px 5px #3292a6;
+   opacity: 0.9;
+   background: #fff;
+    }
+    .navbar h3{
+        font-weight: bolder;
+    }
+    .nav-item{
+     font-size: 1.2rem;
+     padding-right: 20px;
+    }
+    #showcase{
+        position: relative;
+        background: url('../img/teamwork4.jpeg');
+        min-height: 600px;
+        margin-top: -20px;
+      }
+      
+       .primary-overlay{
+          background: rgba(50,146,166,0.8); 
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding-top: 100px;
+        } 
+        .primary-overlay img{
+            height: 100%;
+        }
+#main-footer{
+    margin-top: -20px;
+}
+
+#register-container{
+    position: relative;
+    background: url('../img/teamwork1.jpeg');
+    min-height: 300px;
+    margin-top: -20px;
+}
+
+#register-container .card {
+	border-radius: 50px;
+	border: 2px #3292a6 solid !important;
+}
+#register-container .card h3 {
+	float: left;
+	font-size: 30px;
+	margin-top: 10px;
+	padding: 10px;
+	color: #3292a6;
+}
+#register-container .form-group input{
+    border-radius: 40px;
+	border: 1px #3292a6 solid !important;
+}
+#register-container button {
+	border-radius: 40px;
+	border: 1px #3292a6 solid !important;
+}
+
+#login-container{
+    position: relative;
+    background: url('../img/teamwork2.jpeg');
+    min-height: 500px;
+    margin-top: -20px;
+}
+
+#login-container .card {
+	border-radius: 50px;
+    border: 2px #3292a6 solid !important;
+    min-height: 300px;
+}
+#login-container .card h3 {
+	float: left;
+	font-size: 30px;
+	margin-top: 10px;
+	padding: 10px;
+	color: #3292a6;
+}
+#login-container .form-group input{
+    border-radius: 40px;
+	border: 1px #3292a6 solid !important;
+}
+#login-container button {
+	border-radius: 40px;
+	border: 1px #3292a6 solid !important;
+}
+
+#reset-showcase{
+    position: relative;
+    background: url('../img/teamwork1.jpeg');
+    min-height: 500px;
+    margin-top: -20px;
+}
