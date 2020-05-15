@@ -42,9 +42,6 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/teamwork-laravel/public/">Home</a>
-                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -79,18 +76,46 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-        <footer id="main-footer" class="py-2 bg-primary text-white">
-            <div class="container">
-              <div class="row text-center">
-                <div class="col-md-6 mx-auto">
-                  <p class="lead">Copyright &copy; Teamwork 2020</p>
+        <section id="dashboard" class="py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 bg-primary dashboard" id="basicSidebar">
+                <h3 class="text-center">
+                  <a href="/teamwork-laravel/public/home/" style="color: white; text-decoration: none"><i class="fa fa-home"></i> Dashboard </a>
+                </h3>
+                <div class="mx-auto sidebar">
+                  <ul>
+                    <li>
+                      <a href="/teamwork-laravel/public/posts/create"><i class="fa fa-pencil"></i> New article</a>
+                    </li>
+                    <li>
+                      <a href="/teamwork-laravel/public/posts/"><i class="fa fa-file-text"></i> View articles</a>
+                    </li>
+                    <li>
+                      <a href="/teamwork-laravel/public/articles"><i class="fa fa-file-text"></i> Your articles</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-user-circle"></i> Profile</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar-bottom">
+                  <a href="#"><i class="fa fa-comment"></i> Chat</a>
                 </div>
               </div>
+              <div class="col-md-9 ml-auto">
+
+                  <main class="py-4">
+                    <div class="container">
+                      @include('inc.messages')
+                      @yield('content')
+                    </div>
+                  </main>
+
+              </div>
             </div>
-          </footer>
+          </div>
+        </section>
     </div>
 </body>
 <script>
